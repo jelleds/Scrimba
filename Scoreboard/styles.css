@@ -1,0 +1,12 @@
+
+h1{
+   text-align: center;
+}
+
+.container{
+   display: flex;
+   justify-content: space-around;
+   width: 500px;
+   margin: 0 auto;
+   background: rgb(238, 238, 238);
+}
