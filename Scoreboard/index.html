@@ -3,6 +3,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
    <title>Scoreboard</title>
 </head>
@@ -10,26 +16,34 @@
    
    <h1>Scoreboard</h1>
    <div class="container">
-      <div class="home-team">
-         <h2>Home</h2>
-         <h3 class="score" id="home-score">0</h3>
-         <div class="btns">
-            <div class="add1-btn">+1</div>
-            <div class="add2-btn">+2</div>
-            <div class="add3-btn">+3</div>
+     <div class="score-container">
+         <div class="team home-team">
+            <h2>Home</h2>
+            <h3 class="score" id="home-score">0</h3>
+            <div class="btns">
+               <div class="btn" id="home-add1-btn" onclick="add1Home()">+1</div>
+               <div class="btn" id="home-add2-btn" onclick="add2Home()">+2</div>
+               <div class="btn" id="home-add3-btn" onclick="add3Home()">+3</div>
+            </div>
+            <p id="home3Pointers">3-Pointers: </p>
          </div>
-      </div>
-      
-      <div class="away-team">
-         <h2>Away</h2>
-         <h3 class="score" id="away-score">0</h3>
-         <div class="btns">
-            <div class="add1-btn">+1</div>
-            <div class="add2-btn">+2</div>
-            <div class="add3-btn">+3</div>
+         
+         <div class="team away-team">
+            <h2>Away</h2>
+            <h3 class="score" id="away-score">0</h3>
+            <div class="btns">
+               <div class="btn" id="away-add1-btn" onclick="add1Away()">+1</div>
+               <div class="btn" id="away-add2-btn" onclick="add2Away()">+2</div>
+               <div class="btn" id="away-add3-btn" onclick="add3Away()">+3</div>
+            </div>
+            <p id="away3Pointers">3-pointers: </p>
          </div>
-      </div>
+     </div>
+
+      <button type="button" id="restart-btn" onclick="restartBtn()">Restart</button>
+
    </div>
+
    
    <script src="script.js"></script>
 </body>
