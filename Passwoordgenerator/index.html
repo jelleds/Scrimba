@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <title>Password Genarator</title>
+</head>
+<body>
+
+   <div class="wrapper">
+      <div class="container">
+         <div>
+            <h1>Generate a new
+               <br>
+               <span>Password</span>
+            </h1>
+            <button id="generate-btn" onclick="generatePassword()">Generate</button>
+         </div>
+         <div>
+            <p><b>Total characters:  </b><span id="characters-el"></span></p>
+            <p><b>Password 1: </b><span id="password-el1"></span></p>
+            <p><b>Password 2: </b><span id="password-el2"></span></p>
+         </div>
+      </div>
+      <div class="extras">
+         <div class="totalCharacters">
+            <label for="">How long should the password be</label> <br>
+            <input type="text" id="totalAmountOfCharacters">
+         </div>
+         <button id="reset-el" onclick="resetAll()">reset</button>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
