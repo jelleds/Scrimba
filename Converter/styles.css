@@ -1,0 +1,87 @@
+*{
+   margin: 0;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   background: rgb(255, 255, 255);
+   width: 600px;
+   height: auto;
+   margin: 0 auto;
+   margin-top: 3em;
+   border-radius: 25px;
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.141);
+   padding-bottom: 3em;
+   margin-bottom: 13em;
+}
+
+h1{
+   font-size: 2rem;
+   font-weight: bold;
+}
+.conversion-section{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 2.8em;
+   text-align: center;
+   background-color: #01313F;
+   border-radius: 25px 25px 0 0;
+   color: #fff;
+}
+#convert-number{
+   text-align: center;
+   width: 10em;
+   font-size: 2.6rem;
+   margin: 1em 0;
+   background-color: #01313F;
+   border: none;
+   border-bottom: 2px solid #fff;
+   color: #fff;
+}
+input{
+   outline: none;
+}
+input::placeholder{
+   font-size: 1rem;
+}
+/*remove arrows on number input field*/
+input[type=number]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+ }
+/*remove arrows on number input field*/
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+button{
+   background-color: #fff;
+   font-size: 1.5rem;
+   color: #01313F;
+   border: 1px solid #fff;
+   padding: 0.3em 0.8em;
+   border-radius: 30px;
+}
+.cards{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+.card{
+   align-self: center;
+   text-align: center;
+   padding: 1em;
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.11);
+   width: 80%;
+   height: auto;
+}
+h3{
+   margin-bottom: 1em;
+}
